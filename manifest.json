@@ -4,9 +4,12 @@
   "version": "1.0.0",
   "description": "Upload files directly to multiple cloud storage services",
   "permissions": [
+    "contextMenus",
     "storage",
     "identity",
-    "notifications"
+    "notifications",
+    "scripting",
+    "activeTab"
   ],
   "host_permissions": [
     "https://www.googleapis.com/*",
