@@ -1,4 +1,3 @@
-# filesafe
 # Cloud Storage Uploader Extension - Setup Guide
 
 ## Overview
@@ -62,6 +61,7 @@ onedrive: {
 },
 dropbox: {
   clientId: 'YOUR_DROPBOX_APP_KEY',
+  clientSecret: 'YOUR_DROPBOX_APP_SECRET'
   // ...
 }
 ```
@@ -90,12 +90,6 @@ dropbox: {
 2. Click "Load Temporary Add-on"
 3. Select `manifest.json` from the extension directory
 
-### 4. Add Icons
-
-Create three PNG icons and place them in an `icons/` directory:
-- `icon16.png` (16x16 pixels)
-- `icon48.png` (48x48 pixels)
-- `icon128.png` (128x128 pixels)
 
 ## Usage
 
@@ -175,6 +169,18 @@ const results = await uploadManager.uploadMultipleFiles(
   - Simple upload: < 4MB
   - Resumable upload: >= 4MB (chunked at 3.2MB per chunk)
 - **Dropbox**: No hard limit in this implementation
+
+## Progress
+
+### Providers
+- **Googledrive** : done
+- **Onedrive** : done
+- **Dropbox** : done
+
+### Documents types
+- **Image** : Implement Upload flow for Image (80%)
+- **Text** : Imoplement upload flow for Texts (50%)
+- **PDF** : Implement upload flow for PDF (0%)
 
 ## Troubleshooting
 
