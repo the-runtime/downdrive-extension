@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Storage Uploader</title>
+  <link rel="stylesheet" href="/popup.b0718f0e.css">
+  <script src="/popup.34bc7a80.js" type="module"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Downdrive</h1>
+      <p class="subtitle">Upload files directly to your cloud storage</p>
+    </header>
+
+    <div class="provider-selection">
+      <label for="provider-select">Choose Provider:</label>
+      <select id="provider-select">
+        <option value="googleDrive">Google Drive</option>
+        <option value="onedrive">OneDrive</option>
+        <option value="dropbox">Dropbox</option>
+      </select>
+    </div>
+
+    <!-- <div class="upload-section">
+      <div class="file-input-wrapper">
+        <input type="file" id="file-input" multiple>
+        <label for="file-input" class="file-input-label">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="17 8 12 3 7 8"></polyline>
+            <line x1="12" y1="3" x2="12" y2="15"></line>
+          </svg>
+          <span>Choose Files</span>
+        </label>
+      </div> -->
+
+      <!-- <div class="drop-zone" id="drop-zone">
+        <p>Or drag and drop files here</p>
+      </div> -->
+
+      <div id="file-list" class="file-list"></div>
+    </div>
+
+    <div class="actions">
+      <button id="save-pdf-btn" class="btn btn-primary">
+        <span>Save page as pdf to cloud</span>
+      </button>
+      <button id="save-docx-btn" class="btn btn-primary">
+        <span>Save page as docx to cloud</span>
+      </button>
+      <!-- <button id="clear-btn" class="btn btn-secondary" disabled>Clear</button> -->
+    </div>
+
+    <div id="progress-section" class="progress-section hidden">
+      <div class="progress-bar-wrapper">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+      <p class="progress-text" id="progress-text">Uploading: 0%</p>
+    </div>
+
+    <div id="status-section" class="status-section hidden">
+      <div id="status-message"></div>
+    </div>
+
+    <div class="auth-section">
+      <p class="auth-status" id="auth-status">Not authenticated</p>
+      <button id="auth-btn" class="btn btn-link">Connect Account</button>
+    </div>
+  
+
+
+</body></html>
